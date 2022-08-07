@@ -25,7 +25,7 @@ pipeline {
 
     stage("Copy") {
       steps {
-        sh "cp -a /var/lib/jenkins/workspace/jenkins_test/dist/jenkins-test/. /var/www/jenkins_test/html/"
+        sh "cp -a /var/lib/jenkins/workspace/jenkins_test/dist/jenkins_test/. /var/www/jenkins_test/html/"
       }
     }
 
