@@ -20,6 +20,7 @@ pipeline {
     stage("Build2") {
       steps {
         sh "npm run build --prod"
+        echo "${env.WORKSPACE}
       }
     }
 
