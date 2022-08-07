@@ -18,6 +18,17 @@ pipeline {
          sh '<<Build Command>>'
       }
     }
+    stage("Build") {
+      steps {
+        sh "npm run build --prod"
+      }
+    }
+
+    stage("Copy") {
+      steps {
+        sh "cp -a /var/lib/jenkins/workspace/angular-pipeline/dist/jenkins-test/. /var/www/jenkins_test/html/"
+      }
+    }
 
 
     // stage('Test') {
