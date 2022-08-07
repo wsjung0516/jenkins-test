@@ -4,7 +4,6 @@ node {
     }
 
     stage('Install node modules') {
-        sh "/usr/bin/npm install"
         sh "npm install"
     }
 
