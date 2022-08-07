@@ -18,7 +18,7 @@ pipeline {
          sh '<<Build Command>>'
       }
     }
-    stage("Build") {
+    stage("Build2") {
       steps {
         sh "npm run build --prod"
       }
